@@ -7,68 +7,74 @@
   <style>
     body {
       font-family: 'Arial', sans-serif;
-      background: linear-gradient(135deg, #f8f9fa, #e9ecef);
+      background: linear-gradient(135deg, #f0f4f8, #d9e3f0);
       margin: 0;
       padding: 20px;
       text-align: center;
       color: #333;
     }
     .container {
-      max-width: 700px;
-      margin: 40px auto;
+      max-width: 720px;
+      margin: 30px auto;
       background: white;
-      padding: 40px 20px;
-      border-radius: 20px;
-      box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+      border-radius: 24px;
+      box-shadow: 0 15px 40px rgba(0,0,0,0.1);
+      overflow: hidden;
+    }
+    .header {
+      background: linear-gradient(135deg, #1a3c5e, #2c5f95);
+      color: white;
+      padding: 50px 20px 40px;
     }
     h1 {
-      font-size: 28px;
-      color: #1a3c5e;
-      margin-bottom: 10px;
+      font-size: 30px;
+      margin: 0 0 8px 0;
     }
-    p {
-      font-size: 18px;
-      line-height: 1.6;
-      color: #555;
-      margin: 15px 0;
+    .subtitle {
+      font-size: 19px;
+      opacity: 0.95;
     }
-    .highlight {
-      color: #0d6efd;
-      font-weight: bold;
-    }
-    .demo-box {
-      margin: 40px 0;
-      padding: 30px;
+    .widget-area {
+      margin: 40px 30px;
+      padding: 40px 20px;
       background: #f8f9fa;
-      border-radius: 15px;
-      border: 2px dashed #0d6efd;
+      border-radius: 20px;
+      border: 3px dashed #1a3c5e;
+    }
+    .example {
+      margin: 30px 20px;
+      font-size: 17px;
+      color: #444;
     }
     footer {
-      margin-top: 50px;
+      padding: 25px;
+      color: #666;
       font-size: 14px;
-      color: #777;
     }
   </style>
 </head>
 <body>
   <div class="container">
-    <h1>مكتب أنسام للخدمات العقارية</h1>
-    <p>جرب مساعدنا العقاري الصوتي الذكي الآن</p>
     
-    <div class="demo-box">
-      <p><strong>اضغط على زر الميكروفون أدناه</strong><br>
-      وتكلم بالعامية السعودية</p>
+    <div class="header">
+      <h1>مكتب أنسام للخدمات العقارية</h1>
+      <p class="subtitle">جرب مساعدنا العقاري الصوتي الذكي الآن</p>
+    </div>
+
+    <div class="widget-area">
+      <p><strong>اضغط على زر الميكروفون وتكلم بالعامية السعودية</strong></p>
       
-      <!-- هنا ضع كود الـ Widget من ElevenLabs -->
-      <!-- الصق كود ElevenLabs هنا ↓ -->
+      <!-- هنا يجب أن يكون كود الـ Widget من ElevenLabs -->
       <div id="elevenlabs-widget">
         <!-- Paste your ElevenLabs Widget Code Here --><elevenlabs-convai agent-id="agent_1901knpd4jpkf5w9yzwq9eftykth"></elevenlabs-convai><script src="https://unpkg.com/@elevenlabs/convai-widget-embed" async type="text/javascript"></script>
       </div>
     </div>
 
-    <p class="highlight">جرب الآن، مثلاً قل:</p>
-    <p>"كم إيجار شقة غرفتين في حطين؟"<br>
-       أو "تبغون تديرون لي فيلاي؟"</p>
+    <div class="example">
+      جرب الآن، مثلاً قل:<br><br>
+      "كم إيجار شقة غرفتين في حطين؟"<br>
+      أو "تبغون تديرون لي فيلاي؟"
+    </div>
 
     <footer>
       © أنسام للخدمات العقارية - تجربة تجريبية
