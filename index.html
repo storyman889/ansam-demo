@@ -7,53 +7,62 @@
   <style>
     body {
       font-family: Arial, sans-serif;
-      background: #f8f9fa;
+      background: #f4f7fa;
       margin: 0;
       padding: 20px;
       color: #333;
-      line-height: 1.6;
     }
     .container {
-      max-width: 800px;
+      max-width: 850px;
       margin: 30px auto;
       background: white;
       border-radius: 20px;
-      box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+      box-shadow: 0 10px 35px rgba(0,0,0,0.1);
       overflow: hidden;
     }
     .header {
       background: linear-gradient(135deg, #1a3c5e, #2c5f95);
       color: white;
-      padding: 60px 20px;
+      padding: 45px 20px;
       text-align: center;
     }
+    .logo {
+      max-width: 240px;
+      margin-bottom: 15px;
+    }
     h1 {
-      margin: 0;
-      font-size: 34px;
+      margin: 10px 0 8px 0;
+      font-size: 32px;
     }
     .subtitle {
-      font-size: 20px;
-      margin-top: 12px;
+      font-size: 19px;
       opacity: 0.95;
     }
     .intro {
       padding: 40px 30px;
       text-align: center;
       font-size: 18px;
+      line-height: 1.7;
     }
-    .call-to-action {
-      padding: 30px;
-      background: #f0f4f8;
-      margin: 20px 30px;
+    .widget-section {
+      margin: 20px 30px 40px;
+      padding: 40px 20px;
+      background: #f8f9fa;
       border-radius: 16px;
-      font-size: 17px;
+      border: 3px dashed #1a3c5e;
+      text-align: center;
+    }
+    .demo-hint {
+      margin: 25px 0 10px;
+      font-size: 16.5px;
+      color: #444;
     }
     footer {
       padding: 30px;
+      background: #f8f9fa;
       text-align: center;
       color: #666;
       font-size: 15px;
-      background: #f8f9fa;
     }
   </style>
 </head>
@@ -61,32 +70,39 @@
 
   <div class="container">
     
-    <!-- Header -->
+    <!-- Header with Logo -->
     <div class="header">
+      <img src="https://raw.githubusercontent.com/storyman889/ansam-demo/main/ansam_logo_transparent.png" 
+           alt="أنسام للخدمات العقارية" class="logo">
       <h1>أنسام للخدمات العقارية</h1>
       <p class="subtitle">وساطة • إيجار • إدارة أملاك • تسويق عقاري</p>
     </div>
 
     <!-- Introduction -->
     <div class="intro">
-      <p>مرحباً بك في مكتب أنسام للخدمات العقارية.<br>
-      نقدم خدمات متكاملة في بيع وشراء العقارات، إدارة الأملاك، والتسويق العقاري في الرياض ومحيطها.</p>
+      <p>مرحباً بك في مكتب أنسام للخدمات العقارية.</p>
+      <p>نقدم خدمات متكاملة في بيع وشراء العقارات، إدارة الأملاك، والتسويق العقاري في الرياض ومحيطها.</p>
+      <p><strong>جرب الآن مساعدنا الصوتي الذكي الذي يعمل 24/7</strong></p>
+    </div>
+
+    <!-- Voice Widget -->
+    <div class="widget-section">
+      <p><strong>اضغط على زر الميكروفون أدناه وتكلم بالعامية السعودية</strong></p>
       
-      <p>لدينا فريق متخصص جاهز لمساعدتك 24/7.</p>
-    </div>
+      <!-- Widget from ElevenLabs -->
+      <div id="elevenlabs-widget">
+        <!-- Paste your ElevenLabs Widget Code Here --><elevenlabs-convai agent-id="agent_1901knpd4jpkf5w9yzwq9eftykth"></elevenlabs-convai><script src="https://unpkg.com/@elevenlabs/convai-widget-embed" async type="text/javascript"></script>
+      </div>
 
-    <!-- Call to Action -->
-    <div class="call-to-action">
-      <strong>هل لديك أي سؤال عن عقار؟</strong><br><br>
-      اضغط على زر الميكروفون أدناه وتكلم مع مساعدنا الصوتي الذكي بالعامية السعودية.<br>
-      هو جاهز يجاوبك فوراً عن الأسعار، الإيجارات، إدارة الأملاك، والتسويق.
+      <p class="demo-hint">
+        جرب الآن، مثلاً قل:<br>
+        "كم إيجار شقة غرفتين في حطين؟" أو "تبغون تديرون لي فيلاي؟"
+      </p>
     </div>
-
-    <!-- The Widget will appear here from ElevenLabs (bottom right as is) --><elevenlabs-convai agent-id="agent_1901knpd4jpkf5w9yzwq9eftykth"></elevenlabs-convai><script src="https://unpkg.com/@elevenlabs/convai-widget-embed" async type="text/javascript"></script>
 
     <footer>
-      © أنسام للخدمات العقارية - متاحون لك 24 ساعة يومياً<br>
-      تجربة تجريبية
+      © أنسام للخدمات العقارية - تجربة تجريبية<br>
+      المساعد الصوتي متاح لك 24 ساعة يومياً
     </footer>
   </div>
 
