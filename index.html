@@ -6,35 +6,35 @@
   <title>أنسام للخدمات العقارية - مساعد صوتي</title>
   <style>
     body {
-      font-family: 'Arial', sans-serif;
+      font-family: Arial, sans-serif;
       background: linear-gradient(135deg, #f0f4f8, #d9e3f0);
       margin: 0;
       padding: 20px;
       text-align: center;
-      color: #333;
     }
     .container {
-      max-width: 720px;
-      margin: 30px auto;
+      max-width: 750px;
+      margin: 40px auto;
       background: white;
       border-radius: 24px;
-      box-shadow: 0 15px 40px rgba(0,0,0,0.1);
+      box-shadow: 0 15px 50px rgba(0,0,0,0.12);
       overflow: hidden;
     }
     .header {
       background: linear-gradient(135deg, #1a3c5e, #2c5f95);
       color: white;
-      padding: 50px 20px 40px;
+      padding: 50px 20px;
     }
     h1 {
-      font-size: 30px;
-      margin: 0 0 8px 0;
+      margin: 0;
+      font-size: 32px;
     }
     .subtitle {
       font-size: 19px;
+      margin-top: 8px;
       opacity: 0.95;
     }
-    .widget-area {
+    .widget-wrapper {
       margin: 40px 30px;
       padding: 40px 20px;
       background: #f8f9fa;
@@ -46,25 +46,19 @@
       font-size: 17px;
       color: #444;
     }
-    footer {
-      padding: 25px;
-      color: #666;
-      font-size: 14px;
-    }
   </style>
 </head>
 <body>
   <div class="container">
-    
     <div class="header">
       <h1>مكتب أنسام للخدمات العقارية</h1>
-      <p class="subtitle">جرب مساعدنا العقاري الصوتي الذكي الآن</p>
+      <p class="subtitle">جرب مساعدنا العقاري الصوتي الذكي</p>
     </div>
 
-    <div class="widget-area">
-      <p><strong>اضغط على زر الميكروفون وتكلم بالعامية السعودية</strong></p>
+    <div class="widget-wrapper">
+      <p><strong>اضغط على زر الميكروفون أدناه وتكلم بالعامية السعودية</strong></p>
       
-      <!-- هنا يجب أن يكون كود الـ Widget من ElevenLabs -->
+      <!-- هنا ضع كود الـ Widget من ElevenLabs -->
       <div id="elevenlabs-widget">
         <!-- Paste your ElevenLabs Widget Code Here --><elevenlabs-convai agent-id="agent_1901knpd4jpkf5w9yzwq9eftykth"></elevenlabs-convai><script src="https://unpkg.com/@elevenlabs/convai-widget-embed" async type="text/javascript"></script>
       </div>
@@ -75,10 +69,6 @@
       "كم إيجار شقة غرفتين في حطين؟"<br>
       أو "تبغون تديرون لي فيلاي؟"
     </div>
-
-    <footer>
-      © أنسام للخدمات العقارية - تجربة تجريبية
-    </footer>
   </div>
 </body>
 </html>
