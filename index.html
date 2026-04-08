@@ -3,72 +3,114 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>أنسام للخدمات العقارية - مساعد صوتي</title>
+  <title>أنسام للخدمات العقارية - مساعد صوتي ذكي</title>
   <style>
     body {
       font-family: Arial, sans-serif;
-      background: linear-gradient(135deg, #f0f4f8, #d9e3f0);
+      background: #f4f7fa;
       margin: 0;
       padding: 20px;
-      text-align: center;
+      color: #333;
     }
     .container {
-      max-width: 750px;
-      margin: 40px auto;
+      max-width: 800px;
+      margin: 20px auto;
       background: white;
-      border-radius: 24px;
-      box-shadow: 0 15px 50px rgba(0,0,0,0.12);
+      border-radius: 20px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.1);
       overflow: hidden;
     }
     .header {
       background: linear-gradient(135deg, #1a3c5e, #2c5f95);
       color: white;
       padding: 50px 20px;
+      text-align: center;
     }
     h1 {
-      margin: 0;
+      margin: 0 0 10px 0;
       font-size: 32px;
     }
     .subtitle {
-      font-size: 19px;
-      margin-top: 8px;
+      font-size: 18px;
       opacity: 0.95;
     }
-    .widget-wrapper {
-      margin: 40px 30px;
-      padding: 40px 20px;
-      background: #f8f9fa;
-      border-radius: 20px;
-      border: 3px dashed #1a3c5e;
+    .main-content {
+      padding: 40px 30px;
+      text-align: center;
     }
-    .example {
-      margin: 30px 20px;
-      font-size: 17px;
-      color: #444;
+    .widget-box {
+      margin: 35px 0;
+      padding: 35px 20px;
+      background: #f8f9fa;
+      border: 3px dashed #1a3c5e;
+      border-radius: 16px;
+    }
+    .examples {
+      background: #f0f4f8;
+      padding: 25px;
+      border-radius: 12px;
+      margin: 30px 0;
+      text-align: right;
+    }
+    .docs {
+      margin-top: 40px;
+      text-align: right;
+      font-size: 15px;
+      color: #555;
+    }
+    footer {
+      padding: 25px;
+      background: #f8f9fa;
+      color: #666;
+      font-size: 14px;
+      text-align: center;
     }
   </style>
 </head>
 <body>
   <div class="container">
+    
+    <!-- Header -->
     <div class="header">
       <h1>مكتب أنسام للخدمات العقارية</h1>
-      <p class="subtitle">جرب مساعدنا العقاري الصوتي الذكي</p>
+      <p class="subtitle">وساطة • إدارة أملاك • تسويق عقاري</p>
     </div>
 
-    <div class="widget-wrapper">
-      <p><strong>اضغط على زر الميكروفون أدناه وتكلم بالعامية السعودية</strong></p>
-      
-      <!-- هنا ضع كود الـ Widget من ElevenLabs -->
-      <div id="elevenlabs-widget">
-        <!-- Paste your ElevenLabs Widget Code Here --><elevenlabs-convai agent-id="agent_1901knpd4jpkf5w9yzwq9eftykth"></elevenlabs-convai><script src="https://unpkg.com/@elevenlabs/convai-widget-embed" async type="text/javascript"></script>
+    <!-- Main Content -->
+    <div class="main-content">
+      <h2>جرب مساعدنا العقاري الصوتي الذكي</h2>
+      <p>اضغط على زر الميكروفون وتكلم بالعامية السعودية</p>
+
+      <!-- Widget Box -->
+      <div class="widget-box">
+        <!-- هنا ضع كود الـ Widget من ElevenLabs -->
+        <div id="elevenlabs-widget">
+          <!-- Paste your ElevenLabs Widget Code Here -->
+        </div>
+      </div>
+
+      <!-- Examples -->
+      <div class="examples">
+        <strong>جرب الآن، مثلاً قل:</strong><br><br>
+        "كم إيجار شقة غرفتين في حطين؟"<br>
+        "تبغون تديرون لي فيلاي؟"<br>
+        "كم تاخذون على تسويق عقار؟"
+      </div>
+
+      <!-- Documents Section -->
+      <div class="docs">
+        <strong>يمكنك أيضاً طلب:</strong><br>
+        • قائمة العقارات المتوفرة<br>
+        • أسعار الإيجار والتقسيط<br>
+        • خدمات إدارة الأملاك (نسبة 5-8%)<br>
+        • باقات التسويق العقاري<br>
+        • زيارة ميدانية للعقار
       </div>
     </div>
 
-    <div class="example">
-      جرب الآن، مثلاً قل:<br><br>
-      "كم إيجار شقة غرفتين في حطين؟"<br>
-      أو "تبغون تديرون لي فيلاي؟"
-    </div>
+    <footer>
+      © أنسام للخدمات العقارية - تجربة تجريبية 2026
+    </footer>
   </div>
 </body>
 </html>
