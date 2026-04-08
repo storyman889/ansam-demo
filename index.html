@@ -3,114 +3,142 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>أنسام للخدمات العقارية - مساعد صوتي ذكي</title>
+  <title>أنسام للخدمات العقارية | بيع - إيجار - إدارة أملاك - تسويق</title>
   <style>
     body {
       font-family: Arial, sans-serif;
-      background: #f4f7fa;
       margin: 0;
-      padding: 20px;
+      padding: 0;
+      background: #f8f9fa;
       color: #333;
-    }
-    .container {
-      max-width: 800px;
-      margin: 20px auto;
-      background: white;
-      border-radius: 20px;
-      box-shadow: 0 10px 30px rgba(0,0,0,0.1);
-      overflow: hidden;
     }
     .header {
       background: linear-gradient(135deg, #1a3c5e, #2c5f95);
       color: white;
-      padding: 50px 20px;
+      padding: 60px 20px;
       text-align: center;
     }
     h1 {
-      margin: 0 0 10px 0;
-      font-size: 32px;
+      margin: 0;
+      font-size: 36px;
     }
     .subtitle {
-      font-size: 18px;
+      font-size: 20px;
+      margin-top: 10px;
       opacity: 0.95;
     }
-    .main-content {
-      padding: 40px 30px;
+    .nav {
+      background: white;
+      padding: 15px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
       text-align: center;
+    }
+    .nav a {
+      margin: 0 15px;
+      text-decoration: none;
+      color: #1a3c5e;
+      font-weight: bold;
+    }
+    .main {
+      max-width: 1100px;
+      margin: 30px auto;
+      padding: 0 20px;
+    }
+    .hero {
+      text-align: center;
+      padding: 40px 20px;
+      background: white;
+      border-radius: 16px;
+      box-shadow: 0 5px 20px rgba(0,0,0,0.08);
     }
     .widget-box {
-      margin: 35px 0;
-      padding: 35px 20px;
-      background: #f8f9fa;
-      border: 3px dashed #1a3c5e;
-      border-radius: 16px;
-    }
-    .examples {
+      margin: 40px 0;
+      padding: 40px;
       background: #f0f4f8;
+      border-radius: 16px;
+      border: 3px dashed #1a3c5e;
+      text-align: center;
+    }
+    .services {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+      margin: 50px 0;
+    }
+    .service-card {
+      background: white;
       padding: 25px;
       border-radius: 12px;
-      margin: 30px 0;
-      text-align: right;
-    }
-    .docs {
-      margin-top: 40px;
-      text-align: right;
-      font-size: 15px;
-      color: #555;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.07);
     }
     footer {
-      padding: 25px;
-      background: #f8f9fa;
-      color: #666;
-      font-size: 14px;
+      background: #1a3c5e;
+      color: white;
       text-align: center;
+      padding: 30px;
+      margin-top: 60px;
     }
   </style>
 </head>
 <body>
-  <div class="container">
-    
-    <!-- Header -->
-    <div class="header">
-      <h1>مكتب أنسام للخدمات العقارية</h1>
-      <p class="subtitle">وساطة • إدارة أملاك • تسويق عقاري</p>
-    </div>
 
-    <!-- Main Content -->
-    <div class="main-content">
+  <!-- Header -->
+  <div class="header">
+    <h1>أنسام للخدمات العقارية</h1>
+    <p class="subtitle">وساطة عقارية • إدارة أملاك • تسويق عقاري</p>
+  </div>
+
+  <!-- Navigation -->
+  <div class="nav">
+    <a href="#">الرئيسية</a>
+    <a href="#">عقارات للبيع</a>
+    <a href="#">عقارات للإيجار</a>
+    <a href="#">إدارة الأملاك</a>
+    <a href="#">تسويق عقاري</a>
+    <a href="#">اتصل بنا</a>
+  </div>
+
+  <div class="main">
+
+    <!-- Hero + Voice Agent -->
+    <div class="hero">
       <h2>جرب مساعدنا العقاري الصوتي الذكي</h2>
-      <p>اضغط على زر الميكروفون وتكلم بالعامية السعودية</p>
+      <p>اضغط على الميكروفون وتكلم بالعامية السعودية</p>
 
-      <!-- Widget Box -->
       <div class="widget-box">
-        <!-- هنا ضع كود الـ Widget من ElevenLabs -->
+        <!-- ←←← ضع كود الـ Widget من ElevenLabs هنا ↓↓↓ -->
         <div id="elevenlabs-widget">
           <!-- Paste your ElevenLabs Widget Code Here -->
         </div>
       </div>
 
-      <!-- Examples -->
-      <div class="examples">
-        <strong>جرب الآن، مثلاً قل:</strong><br><br>
-        "كم إيجار شقة غرفتين في حطين؟"<br>
-        "تبغون تديرون لي فيلاي؟"<br>
-        "كم تاخذون على تسويق عقار؟"
-      </div>
+      <p><strong>مثال على ما يمكنك قوله:</strong><br>
+      "كم إيجار شقة غرفتين في حطين؟" أو "تبغون تديرون لي فيلاي؟"</p>
+    </div>
 
-      <!-- Documents Section -->
-      <div class="docs">
-        <strong>يمكنك أيضاً طلب:</strong><br>
-        • قائمة العقارات المتوفرة<br>
-        • أسعار الإيجار والتقسيط<br>
-        • خدمات إدارة الأملاك (نسبة 5-8%)<br>
-        • باقات التسويق العقاري<br>
-        • زيارة ميدانية للعقار
+    <!-- Services -->
+    <h2 style="text-align:center; margin:50px 0 30px;">خدماتنا</h2>
+    <div class="services">
+      <div class="service-card">
+        <h3>وساطة عقارية</h3>
+        <p>بيع وشراء شقق، فلل، وأراضي سكنية في الرياض</p>
+      </div>
+      <div class="service-card">
+        <h3>إدارة الأملاك</h3>
+        <p>تأجير، صيانة، تحصيل إيجارات، وعقود موحدة</p>
+      </div>
+      <div class="service-card">
+        <h3>تسويق عقاري</h3>
+        <p>تصوير احترافي، إعلانات ممولة، وجولات افتراضية</p>
       </div>
     </div>
 
-    <footer>
-      © أنسام للخدمات العقارية - تجربة تجريبية 2026
-    </footer>
   </div>
+
+  <footer>
+    © 2026 مكتب أنسام للخدمات العقارية - الرياض<br>
+    جميع الحقوق محفوظة
+  </footer>
+
 </body>
 </html>
